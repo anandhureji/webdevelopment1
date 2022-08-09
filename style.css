@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    height: 100vh;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    grid-template-rows: 1fr 4fr 1.2fr 1.2fr;
+    grid-template-areas: "logo logo header"
+                         "main main  image"
+                         "quotes quotes image"
+                         "btn1 btn2 image";
+
+}
+
+.logo
+{
+    grid-area: logo;
+    /* grid-area: 1/1/2/3; */
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    background-color: rgb(164, 178, 179);
+}
+
+.main
+{
+    grid-area: main;
+    /* grid-area: 2/1/3/3; */
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3; */
+    background-color: white;
+}
+
+.quotes{
+    grid-area: quotes;
+    background-color: white;
+
+    /* grid-area: 3/1/4/3; */
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; */
+}
+
+header{
+
+    grid-area: header;
+    background-color: azure;
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+}
+
+.btn1{
+    grid-area: btn1;
+    background-color: green;
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: green; */
+}
+
+.btn2{
+    grid-area: btn2;
+    background-color: darkgreen;
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: darkgreen; */
+}
+
+.img-box{
+    grid-area: image;
+    background-color: aquamarine;
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5; */
+}
